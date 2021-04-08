@@ -1,0 +1,25 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b9bbbe;
+}
+#payment-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6f8198;
+  margin: 15px;
+  border-radius: 15px;
+}
+#payment-details {
+  background-color: #b9bbbe;
+}
+#card-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#payment-button {
+  margin: 8px;
+}
