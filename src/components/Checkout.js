@@ -47,7 +47,7 @@ class Checkout extends React.Component {
         <div className="checkout">
           <div id="payment-box">
             <p>Would you like to complete the purchase?</p>
-            <StripeProvider apiKey={null}>
+            <StripeProvider apiKey="null">
               <Elements>
                 <StripeCard updateCart={this.updateCart} />
               </Elements>
