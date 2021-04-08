@@ -26,7 +26,6 @@ class Checkout extends React.Component {
   }
 
   updateCart(data) {
-    console.log(data);
     this.props.getCart();
     this.props.listProductsThunk();
     this.setState({ transactionComplete: true, transactions: [...data] });
@@ -36,7 +35,6 @@ class Checkout extends React.Component {
     const { cart } = this.props;
     this.calcTotal(cart);
   }
-
   render() {
     if (this.state.total === 0) {
       return (
@@ -49,7 +47,7 @@ class Checkout extends React.Component {
         <div className="checkout">
           <div id="payment-box">
             <p>Would you like to complete the purchase?</p>
-            <StripeProvider apiKey={process.env.STRIPE_API}>
+            <StripeProvider apiKey={null}>
               <Elements>
                 <StripeCard updateCart={this.updateCart} />
               </Elements>
