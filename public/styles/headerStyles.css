@@ -40,12 +40,13 @@
 #cart-icon {
   width: 60px;
   height: 60px;
-  margin: auto;
+  /* margin: auto; */
+  /* padding-right: 15px; */
 }
 #cart-text {
   color: #bebdb6;
-  margin: auto;
-  font-size: 20px;
+  font-size: 18px;
+  padding-left: 10px;
 }
 #cart-button {
   align-items: center;

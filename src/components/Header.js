@@ -14,7 +14,8 @@ function Header({ cart }) {
       <div id="eoTitle">Journey Wares</div>
       <Link id="eoTitle" to="/myCart">
         <img id="cart-icon" src="/img/cart.png" />
-        <div id="cart-text">Cart: {cart.length > 0 ? cart[0].quantity : 0}</div>
+        <div id="cart-text">Cart</div>
+        {/* <div id="cart-text">Cart: {cart.length > 0 ? cart[0].quantity : 0}</div> */}
       </Link>
       {/* <CartHeader cart={cart} /> */}
       <UserHeader />

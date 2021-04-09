@@ -65,7 +65,8 @@ class UserCart extends React.Component {
                       <button onClick={() => deleteCartItem(i.id)}>
                         Remove
                       </button>
-                      {i.product.name} | quantity {i.quantity} | In Stock :{' '}
+                      {i.product.name} | {i.product.cost} | Quantity{' '}
+                      {i.quantity} | In Stock :{' '}
                       {i.product.inStock ? 'YES' : 'NO'}
                     </li>
                   ))
@@ -74,8 +75,13 @@ class UserCart extends React.Component {
             <ul>
               {cart.map(i => (
                 <li key={i.id}>
-                  <img src={i.product.image} /> {i.product.name} | Quantity{' '}
-                  {i.quantity} | In Stock : {i.product.inStock ? 'YES' : 'NO'}
+                  <img src={i.product.image} />
+                  <br />
+                  {i.product.name} <br />
+                  {i.product.cost} Gold <br />
+                  Quantity {i.quantity}
+                  <br />
+                  In Stock : {i.product.inStock ? 'YES' : 'NO'}
                   <br />
                   <button onClick={() => deleteCartItem(i.id)}>
                     Remove from cart
@@ -86,10 +92,11 @@ class UserCart extends React.Component {
           </div>
           <div className="cart-checkout">
             <h3>
-              Subtotal ({cart.length})<br />
-              Total: {this.state.total} gold coins
               <br />
-              <br />- Credit card also accepted -
+              <br />
+              Items: ({cart.length})<br />
+              Total: {this.state.total} Gold coins
+              <br />
             </h3>
             <Link to="/checkout">
               <button>Proceed to Checkout</button>

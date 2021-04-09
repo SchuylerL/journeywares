@@ -13,9 +13,13 @@ import {
 import { createItem } from '../storeReducers/cartReducer';
 
 function handleBuy(createItem, matchId, quantity) {
+  document.getElementById('msgGreen').innerHTML = 'Added to cart';
+  setTimeout(timedMsg, 2000);
   if (quantity) createItem(matchId, quantity);
 }
-
+function timedMsg() {
+  document.getElementById('msgGreen').innerHTML = '';
+}
 function initQuantity() {
   let result = 1;
   return function(update = false, value) {
@@ -62,6 +66,7 @@ class DetailProduct extends React.Component {
               className={'product-image'}
               alt="Product Image"
             />
+            <br />
             {/* <select onChange={e => updatedQuantity(true, e.target.value)}>
               {populateQuantityOptions(detailProduct.stock)}
             </select> */}
@@ -70,6 +75,7 @@ class DetailProduct extends React.Component {
             >
               Add to Cart
             </button>
+            <h3 id="msgGreen"></h3>
           </div>
           <div id="productDetails">
             <h1>{detailProduct.name}</h1>
