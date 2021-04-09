@@ -62,9 +62,9 @@ class DetailProduct extends React.Component {
               className={'product-image'}
               alt="Product Image"
             />
-            <select onChange={e => updatedQuantity(true, e.target.value)}>
+            {/* <select onChange={e => updatedQuantity(true, e.target.value)}>
               {populateQuantityOptions(detailProduct.stock)}
-            </select>
+            </select> */}
             <button
               onClick={() => handleBuy(createItem, matchId, updatedQuantity())}
             >
