@@ -75,7 +75,7 @@ class DetailProduct extends React.Component {
             >
               Add to Cart
             </button>
-            <h3 id="msgGreen"></h3>
+            <p id="msgGreen"></p>
           </div>
           <div id="productDetails">
             <h1>{detailProduct.name}</h1>
