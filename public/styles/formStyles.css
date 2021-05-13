@@ -67,9 +67,10 @@ li a:hover {
 #msg {
   color: white;
 }
-#msgGreen {
+/* #msgGreen {
   color: green;
-}
+  margin: 5px 0;
+} */
 /* google buttons */
 .btn {
   margin-top: 5px;

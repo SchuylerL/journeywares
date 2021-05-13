@@ -13,12 +13,12 @@ import {
 import { createItem } from '../storeReducers/cartReducer';
 
 function handleBuy(createItem, matchId, quantity) {
-  document.getElementById('msgGreen').innerHTML = 'Added to cart';
+  document.getElementById('msgGreen').innerHTML = 'Added to Cart';
   setTimeout(timedMsg, 2000);
   if (quantity) createItem(matchId, quantity);
 }
 function timedMsg() {
-  document.getElementById('msgGreen').innerHTML = '';
+  document.getElementById('msgGreen').innerHTML = 'Add to Cart';
 }
 function initQuantity() {
   let result = 1;
@@ -28,17 +28,17 @@ function initQuantity() {
   };
 }
 
-function populateQuantityOptions(max) {
-  const options = [];
-  for (let i = 1; i <= max && i <= 10; i++) {
-    options.push(
-      <option key={i} value={i}>
-        {i}
-      </option>,
-    );
-  }
-  return options;
-}
+// function populateQuantityOptions(max) {
+//   const options = [];
+//   for (let i = 1; i <= max && i <= 10; i++) {
+//     options.push(
+//       <option key={i} value={i}>
+//         {i}
+//       </option>,
+//     );
+//   }
+//   return options;
+// }
 
 class DetailProduct extends React.Component {
   componentDidMount() {
@@ -71,11 +71,11 @@ class DetailProduct extends React.Component {
               {populateQuantityOptions(detailProduct.stock)}
             </select> */}
             <button
+              id="msgGreen"
               onClick={() => handleBuy(createItem, matchId, updatedQuantity())}
             >
               Add to Cart
             </button>
-            <span id="msgGreen"></span>
           </div>
           <div id="productDetails">
             <h1>{detailProduct.name}</h1>
