@@ -63,13 +63,13 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.4.0",
-    "eslint": "^6.1.0",
+    "eslint": "^8.11.0",
     "eslint-config-airbnb": "^18.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
-    "jest": "^24.8.0",
+    "jest": "^27.5.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -82,7 +82,7 @@
     "sequelize": "^5.10.0",
     "supertest": "^4.0.2",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "connect-session-sequelize": "^6.0.0",

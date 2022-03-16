@@ -1,6 +1,7 @@
 .products-list {
   background-color: #58585b;
   display: flex;
+  justify-content: center;
   flex-grow: 2;
   flex-wrap: wrap;
   flex-direction: row;
