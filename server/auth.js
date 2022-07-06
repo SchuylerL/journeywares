@@ -1,12 +1,12 @@
 const router = require('express').Router();
 const User = require('./db/models/User.js');
 const passport = require('passport');
-// const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 module.exports = router;
 
 passport.use(
-  // new GoogleStrategy(
+  new GoogleStrategy(
   {
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
@@ -30,7 +30,7 @@ passport.use(
       console.log(error);
     }
   },
-  // ),
+  ),
 );
 
 router.get('/google', passport.authenticate('google', { scope: 'email' }));
