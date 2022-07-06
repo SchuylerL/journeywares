@@ -79,7 +79,7 @@ class DetailProduct extends React.Component {
           </div>
           <div id="productDetails">
             <h1>{detailProduct.name}</h1>
-            <div>{detailProduct.description}</div>
+            <div style={{ textAlign: 'left' }}>{detailProduct.description}</div>
             <br />
             <div>Stock: {detailProduct.stock}</div>
           </div>
