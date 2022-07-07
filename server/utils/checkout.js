@@ -1,4 +1,5 @@
-const stripe = require('stripe')(process.env.STRIPE_KEY);
+// const stripe = require('stripe')(process.env.STRIPE_KEY);
+const stripe = require('stripe')('yy');
 let checkoutId;
 
 async function checkoutStripe(token, cart) {
