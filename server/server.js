@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const passport = require('passport');
 const User = require('./db/models/User');
-require('sequelize');
+// require('sequelize');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -12,7 +12,7 @@ app.use(require('morgan')('tiny'));
 
 app.use('/', express.static(path.join(__dirname, '../public')));
 
-require('dotenv').config();
+// require('dotenv').config();
 
 app.use(
   session({
