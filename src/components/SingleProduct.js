@@ -10,32 +10,31 @@ function SingleProduct({ product }) {
   return (
     <div key={product.id} className="product-card">
       <Link to={`/products/${product.id}`}>
-        {/* <center> */}
-        <img
-          className="product-image"
-          src={
-            product.image ? product.image : '/img/products/default-product.jpg'
-          }
-          alt="Product Image"
-        />
-        {/* </center> */}
+        <center>
+          <img
+            className="product-image"
+            src={
+              product.image
+                ? product.image
+                : '/img/products/default-product.jpg'
+            }
+            alt="Product Image"
+          />
+        </center>
         <div key={product.id} className="product-container">
           <h3>{product.name}</h3>
-          {product.description
-            ? product.description.slice(0, 70) + '...'
-            : ''}{' '}
-          {/* <center> */}
-          <br />
-          Cost: {product.cost} Gold
-          <br />
-          Class:{' '}
-          {product.class.charAt(0).toUpperCase() + product.class.slice(1)}
-          <br />
-          In Stock: {stocked}
-          <br />
-          Stock Count: {product.stock}
-          {/* <br />
-          </center> */}
+          {product.description ? product.description.slice(0, 70) + '...' : ''}
+          <center>
+            <br />
+            Cost: {product.cost} Gold
+            <br />
+            Class:{' '}
+            {product.class.charAt(0).toUpperCase() + product.class.slice(1)}
+            <br />
+            In Stock: {stocked}
+            <br />
+            Stock Count: {product.stock}
+          </center>
         </div>
       </Link>
     </div>

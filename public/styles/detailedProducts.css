@@ -18,7 +18,8 @@
   border-radius: 5px;
   width: 200px;
   height: 400px;
-  padding: 40px 10px 0 10px;
+  justify-content: center;
+  /* padding: 40px 10px 0 10px; */
 }
 .product-container {
   display: flex;
