@@ -7,7 +7,7 @@
   gap: 10px;
   border: solid black 1px;
   border-radius: 15px;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .product-card {
   display: flex;
@@ -19,7 +19,7 @@
   width: 200px;
   height: 400px;
   justify-content: center;
-  /* padding: 40px 10px 0 10px; */
+  padding: 0 10px;
 }
 .product-container {
   display: flex;
