@@ -107,7 +107,4 @@ const mapDispatchToProps = dispatch => {
     singleProductThunk: id => dispatch(singleProductThunk(id)),
   };
 };
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(EditProduct);
+export default connect(mapStateToProps, mapDispatchToProps)(EditProduct);

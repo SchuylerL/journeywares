@@ -133,7 +133,4 @@ const mapDispatchToProps = dispatch => ({
   updateUserItemFromGuest: item => dispatch(updateUserItemFromGuest(item)),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(UserCart);
+export default connect(mapStateToProps, mapDispatchToProps)(UserCart);

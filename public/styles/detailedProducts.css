@@ -32,12 +32,6 @@
   border-radius: 5px;
   margin: 5px;
 }
-/* a:hover {
-  border-radius: 5px;
-  border: 1px lightblue solid;
-  background-color: #ececec;
-} */
-/* details view */
 .detailedProducts {
   display: flex;
   flex-direction: column;
@@ -64,9 +58,6 @@
   background-color: #94ded6;
   align-items: space-between;
 }
-/* #productDetails {
-  padding-left: 30px;
-}*/
 #reviewProduct {
   padding: 10px;
 }

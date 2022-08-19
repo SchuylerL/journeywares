@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { Cart, Product } = require('../db/index.js');
 
-// Helper function to determine guest or user status
-// sends back object with {memberStatus, memberId}
+/* Helper function to determine guest or user status
+sends back object with {memberStatus, memberId} */
 function determineUser(sessionID, session) {
   const result = {};
   if (session.userId) {
@@ -15,9 +15,9 @@ function determineUser(sessionID, session) {
   return result;
 }
 
-// Provide the client with relevant information for all
-// of their cart row entries. Get a request, and provide an array
-// of all the product and cart information.
+/* Provide the client with relevant information for all
+of their cart row entries. Get a request, and provide an array
+of all the product and cart information. */
 router.get('/getCartProducts', async (req, res, next) => {
   const member = determineUser(req.sessionID, req.session);
   try {
@@ -31,8 +31,8 @@ router.get('/getCartProducts', async (req, res, next) => {
   }
 });
 
-// Updates the relevant row in the Cart table based on req.body
-// and result from member
+/* Updates the relevant row in the Cart table based on req.body
+and result from member */
 router.put('/changeCart/:productId', async (req, res) => {
   const member = determineUser(req.sessionID, req.session);
   try {

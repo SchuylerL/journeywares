@@ -17,13 +17,8 @@
 }
 
 .cart-list li {
-  /* border-bottom: solid 1px black; */
   padding: 10px;
 }
-
-/* .cart-list li:hover {
-  background-color: #58585b;
-} */
 
 .cart-list img {
   width: 100px;

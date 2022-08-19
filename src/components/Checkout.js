@@ -96,7 +96,4 @@ const mapDispatchToProps = dispatch => ({
   listProductsThunk: () => dispatch(listProductsThunk()),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Checkout);
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout);

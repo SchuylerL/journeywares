@@ -26,7 +26,4 @@ const mapStateToProps = state => ({
   errors: state.errors,
 });
 
-export default connect(
-  mapStateToProps,
-  null,
-)(ErrorList);
+export default connect(mapStateToProps, null)(ErrorList);

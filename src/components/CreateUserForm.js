@@ -114,7 +114,4 @@ CreateUserForm.propTypes = {
 const mapDispatchToProps = dispatch => ({
   postUser: data => dispatch(postUser(data)),
 });
-export default connect(
-  null,
-  mapDispatchToProps,
-)(CreateUserForm);
+export default connect(null, mapDispatchToProps)(CreateUserForm);

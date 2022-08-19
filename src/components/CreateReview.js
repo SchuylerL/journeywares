@@ -85,7 +85,4 @@ CreateReview.propTypes = {
   ]),
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(CreateReview);
+export default connect(mapStateToProps, mapDispatchToProps)(CreateReview);

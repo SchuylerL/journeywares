@@ -79,7 +79,4 @@ const mapDispatchToProps = dispatch => ({
   getCart: userLogin => dispatch(getCart(userLogin)),
 });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(UserHeader);
+export default connect(mapStateToProps, mapDispatchToProps)(UserHeader);

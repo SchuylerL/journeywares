@@ -65,7 +65,4 @@ const mapStateToProps = state => ({
   cart: state.cart,
 });
 
-export default connect(
-  mapStateToProps,
-  null,
-)(UserProfile);
+export default connect(mapStateToProps, null)(UserProfile);

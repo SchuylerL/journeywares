@@ -74,7 +74,4 @@ const mapDispatchToProps = dispatch => ({
   listProductsThunk: () => dispatch(listProductsThunk()),
 });
 
-export default connect(
-  null,
-  mapDispatchToProps,
-)(App);
+export default connect(null, mapDispatchToProps)(App);
