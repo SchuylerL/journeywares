@@ -2,9 +2,33 @@
   {
     "firstName": "User",
     "lastName": "Demo",
-    "password": "user21",
+    "password": "user321",
     "class": "mage",
     "email": "user@user.com",
+    "isAdmin": false
+  },
+  {
+    "firstName": "User2",
+    "lastName": "Demo",
+    "password": "user2",
+    "class": "mage",
+    "email": "user2@user.com",
+    "isAdmin": false
+  },
+  {
+    "firstName": "User3",
+    "lastName": "Demo",
+    "password": "user3",
+    "class": "mage",
+    "email": "user3@user.com",
+    "isAdmin": false
+  },
+  {
+    "firstName": "User4",
+    "lastName": "Demo",
+    "password": "user4",
+    "class": "mage",
+    "email": "user4@user.com",
     "isAdmin": false
   }
 ]
