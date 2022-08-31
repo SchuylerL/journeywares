@@ -35,9 +35,19 @@ function UserHeader({ user, loginUser, logoutUser, getCart }) {
           </form> */}
         <form onSubmit={e => handleLogin(e, loginUser, getCart)}>
           <label htmlFor="email">Email: </label>
-          <input type="email" name="email" required />
+          <input
+            placeholder="user@user.com"
+            type="email"
+            name="email"
+            required
+          />
           <label htmlFor="password">Password: </label>
-          <input type="password" name="password" required />
+          <input
+            placeholder="user132"
+            type="password"
+            name="password"
+            required
+          />
           <button>Login</button>
         </form>
       </div>

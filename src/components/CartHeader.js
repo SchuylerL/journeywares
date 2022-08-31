@@ -5,11 +5,9 @@ import { Link } from 'react-router-dom';
 
 export function CartHeader({ cart }) {
   // const cartItems = cart ? cart.length : 0;
-  console.log(cart);
   return (
     <div id="cart-header">
       <Link to="/myCart">
-        {/* <h4 id="cart-button">*/}
         <div id="cart-button">
           <br />
           <br />
@@ -20,7 +18,6 @@ export function CartHeader({ cart }) {
             {/* : {cartItems} */}
           </center>
         </div>
-        {/* </h4> */}
       </Link>
     </div>
   );

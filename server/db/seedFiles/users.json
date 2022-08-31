@@ -2,7 +2,7 @@
   {
     "firstName": "User",
     "lastName": "Demo",
-    "password": "user321",
+    "password": "user132",
     "class": "mage",
     "email": "user@user.com",
     "isAdmin": false
