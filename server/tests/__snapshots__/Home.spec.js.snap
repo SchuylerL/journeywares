@@ -4,6 +4,7 @@ exports[`<Home/> renders the home component 1`] = `
 <div
   className="main-view"
 >
+  <Connect(Header) />
   <MenuBar />
   <Connect(Products) />
 </div>
